@@ -1,34 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
+/* RESET */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
 header {
     background: purple;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 10px;
     color: white;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: orange;
+}
+
+/* HERO SECTION */
 .hero {
-    background: #f4f4f4;
-    padding: 60px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/community.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
     text-align: center;
 }
 
-.intro {
-    padding: 40px;
+.hero h2 {
+    font-size: 40px;
 }
 
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* FOOTER */
 footer {
     background: #222;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
