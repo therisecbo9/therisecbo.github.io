@@ -183,3 +183,25 @@ footer {
     background: #222;
     color: white;
 }
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+/* DETAILED PROGRAMS */
+.programs-detailed {
+    padding: 40px 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.program-box {
+    background: #ffffff;
+    padding: 25px;
+    border-left: 5px solid #b30000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
