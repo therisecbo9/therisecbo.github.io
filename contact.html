@@ -48,10 +48,11 @@
         <!-- CONTACT FORM -->
         <div class="contact-form">
             <h2>Send a Message</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+            <form action="https://formspree.io/f/mlgaeydo" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="hidden" name="_subject" value="New Message from The Rise CBO Website">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
